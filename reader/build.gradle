@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'org.greenrobot.greendao'
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+
+        applicationId "com.syezon.reader"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.0.2"
+        buildConfigField("boolean", "LOG", "true")
+
+    }
+    buildTypes {
+        release {
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            minifyEnabled true
+            buildConfigField("boolean", "LOG", "false")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    sourceSets {
+//        main {
+//            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+//        }
+//    }
+    productFlavors {
+        tencent { resValue "string", "syezon_channel_id", "tencent" }
+        baidu { resValue "string", "syezon_channel_id", "baidu" }
+        xiaomi { resValue "string", "syezon_channel_id", "xiaomi" }
+        huawei { resValue "string", "syezon_channel_id", "huawei" }
+        qihu { resValue "string", "syezon_channel_id", "qihu" }
+        oppo { resValue "string", "syezon_channel_id", "oppo" }
+        meizu { resValue "string", "syezon_channel_id", "meizu" }
+        lenovo { resValue "string", "syezon_channel_id", "lenovo" }
+        wandoujia { resValue "string", "syezon_channel_id", "wandoujia" }
+        official { resValue "string", "syezon_channel_id", "official" }
+        ABC { resValue "string", "syezon_channel_id", "ABC" }
+        miaowu { resValue "string", "syezon_channel_id", "miaowu" }
+        cesu { resValue "string", "syezon_channel_id", "cesu" }
+        flash { resValue "string", "syezon_channel_id", "flash" }
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.daimajia.numberprogressbar:library:1.4@aar'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.yanzhenjie:andserver:1.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile project(':LRecyclerview_library')
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile files('libs/Ad_Android_SDK.jar')
+    compile project(':PushSDK')
+    compile files('libs/commons-io-2.5.jar')
+    compile files('libs/app-monitor-sdk-2.5.1.1_for_bc_proguard.jar')
+    compile files('libs/utdid4all-1.1.5.3_proguard.jar')
+    compile(name: 'alisdk-feedback-2.5.0.1', ext: 'aar')
+    compile(name: 'securityguardaar3-5.1.81', ext: 'aar')
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.mani:ThinDownloadManager:1.2.7'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    // If you want to use the GPU Filters
+}
+

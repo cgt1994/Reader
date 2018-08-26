@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/foot_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linear_bookcase"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bookcase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_bookcase_checked"
+            android:textColor="@color/title_bg"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_bookcase_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_bookcase"
+            android:textColor="@color/title_bg"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_bookstore"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bookstore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_bookstore_unchecked"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_bookstore_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_bookstore"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_mine_unchecked"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_mine_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_mine"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

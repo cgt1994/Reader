@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bg">#36C5D3</color>
+    <color name="foot_bg">#EDEBEC</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#6C6D6F</color>
+    <color name="gray_tra">#80d8dade</color>
+    <color name="color1">#f6f6f6</color>
+    <color name="color2">#DCD0AA</color>
+    <color name="color3">#D2EFD1</color>
+    <color name="foot_unchecked">#B2B2B2</color>
+    <color name="blue">#66B9FE</color>
+    <color name="red">#FF6B52</color>
+    <color name="book_name_black">#505050</color>
+    <color name="chapter_select_509FDE">#509FDE</color>
+    <color name="book_chapter_color">#B6B6B6</color>
+    <color name="divide">#f5f5f5</color>
+    <color name="graywhite">#EFEBEF</color><![CDATA[>
+
+    ]]>
+    <color name="white_bg">#F5F5F5</color>
+    <color name="night_bg">#1D1D1F</color>
+    <color name="moon_blue">#4A8BC5</color>
+    <color name="white_yellow">#E4AF0B</color>
+    <color name="yellow_brown">#AC7B2C</color>
+    <color name="night_blue">#3E6E9B</color>
+    <color name="night_black">#0F1217</color>
+    <color name="pink_blue">#6CAFCC</color>
+</resources>

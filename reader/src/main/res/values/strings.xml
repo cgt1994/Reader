@@ -1,0 +1,103 @@
+<resources>
+
+    <string name="app_name">凤凰阅读</string>
+    <string name="quit_app">确定要退出软件吗？</string>
+    <string name="update_info">检测到有新版本，内容更丰富，看书更流畅！</string><![CDATA[
+    >
+    ]]>
+    <string name="banquan">本站所有小说为转载作品，均为网友上传，转载只是为了宣传本书让更多读者欣赏。如果本站涉及您的个人版权请联系QQ: 190350470</string>
+    <string name="title_bookcase">书架</string>
+    <string name="title_bookstore">书城</string>
+    <string name="title_free_novel">精品免费小说</string>
+    <string name="title_mine">我的</string>
+    <string name="title_detail">详情</string>
+    <string name="title_wifi">Wi-Fi传书</string>
+    <string name="title_about">关于我们</string>
+    <string name="title_search">搜索结果</string>
+    <string name="title_chapter">目录</string>
+
+    <string name="sub_title_class">分类</string>
+    <string name="sub_title_sift">精选</string>
+    <string name="sub_title_sort">排行</string>
+
+    <string name="detail">详情</string>
+    <string name="cache">缓存</string>
+    <string name="top">置顶</string>
+    <string name="delete">删除</string>
+
+    <string name="addToBookCase">添加书架</string>
+    <string name="checkDir">查看目录</string>
+    <string name="bookDesc">图书简介</string>
+    <string name="readImmediately">立即阅读</string>
+    <string name="similar">相似书籍</string>
+
+    <string name="not_auto_lock">阅读时不自动锁屏</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="feedback">意见反馈</string>
+    <string name="checkupdata">检查更新</string>
+
+    <string name="clear_cache_title">提示</string>
+    <string name="clear_cache_msg">该操作将清空所有缓存的书籍,\n确认清理吗?</string>
+    <string name="clear_cache_complete">缓存清理完成</string>
+
+    <string name="wifiTransfer">Wi-Fi传书</string>
+    <string name="wifi_transfer_tip">在电脑浏览器地址栏输入</string>
+    <string name="wifi_open">Wi-Fi模式已开启</string>
+    <string name="wifi_close">Wi-Fi模式未开启</string>
+    <string name="wifi_tip">已连接Wi-Fi名称为\"%s\"\n手机和电脑务必在同一Wi-Fi内</string>
+    <string name="wifi_close_tip">请开启WiFi</string>
+    <string name="loading">正在加载...</string>
+    <string name="connected">已连接请传输</string>
+    <string name="transfer_tip">传输过程中请不要关闭此界面或锁屏</string>
+    <string name="transfer_success">书籍上传成功</string>
+
+    <string name="copy_info">Copyright @2016 Hangzhou syezon Co.,Ltd</string>
+
+    <string name="btn_sure">确定</string>
+    <string name="btn_cancel">取消</string>
+
+    <string name="search_hint">搜索书城</string>
+    <string name="hot_search">热门搜索</string>
+    <string name="search_no_result">没有搜索到该内容,再搜搜其他的吧!</string>
+    <string name="novel_no_result">该分类下暂无小说,去看看其他分类吧!</string>
+    <string name="boy_search">男生热搜</string>
+    <string name="girl_search">女生热搜</string>
+    <string name="editor_recommend">小编推荐</string>
+
+    <string name="add2bookcase_success">添加成功</string>
+    <string name="add2bookcase_failure">添加失败</string>
+    <string name="add2bookcase_exist">书籍已添加</string>
+
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+
+    <string name="parse_book_tip">正在进行分页,请稍等...</string>
+    <!--icon -->
+    <string name="icon_history_thin">&#xe60a;</string>
+    <string name="icon_search">&#xe605;</string>
+    <string name="icon_delete_bucket">&#xe606;</string>
+    <string name="icon_delete_fork">&#xe60c;</string>
+    <string name="icon_brightness">&#xe60b;</string>
+    <string name="icon_menu">&#xe60d;</string>
+    <string name="icon_bookstore_unchecked">&#xe601;</string>
+    <string name="icon_bookstore_checked">&#xe602;</string>
+    <string name="icon_bookcase_unchecked">&#xe603;</string>
+    <string name="icon_bookcase_checked">&#xe604;</string>
+    <string name="icon_mine_unchecked">&#xe613;</string>
+    <string name="icon_mine_checked">&#xe614;</string>
+    <string name="icon_download">&#xe607;</string>
+    <string name="icon_detail">&#xe608;</string>
+    <string name="icon_night">&#xe60f;</string>
+    <string name="icon_top">&#xe609;</string>
+    <string name="icon_font">&#xe610;</string>
+    <string name="icon_progress">&#xe615;</string>
+    <string name="icon_back">&#xe616;</string>
+    <string name="icon_arrow_left">&#xe616;</string>
+    <string name="icon_arrow_right">&#xe617;</string>
+
+    <!--UMENG-->
+    <!-- 5.0.1 -->
+
+</resources>

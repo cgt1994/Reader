@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_not_connect"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/ip_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/wifi_transfer_tip"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/wifi_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ip_tip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/wifi_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="-.-.-.-:----"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_connected"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:id="@+id/iv_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/transfer"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/pb_transfer"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="6dp"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:progressDrawable="@drawable/transfer_progress"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_computer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@id/iv_transfer"
+                android:src="@mipmap/computer" />
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/iv_transfer"
+                android:src="@mipmap/phone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_transfer_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/connected"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_transfer_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/transfer_tip"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divide" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/img_wifi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/wifi" />
+
+        <TextView
+            android:id="@+id/wifi_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_wifi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/wifi_open"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/wifi_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wifi_status"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/wifi_tip"
+            android:textColor="@color/foot_unchecked"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

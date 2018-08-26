@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <LinearLayout
+        android:id="@+id/linear_show"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_popu_img"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_pic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_popu_img"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_popu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="书名"
+                android:textColor="@color/book_name_black"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tv_popu_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_popu_name"
+                android:text="作者"
+                android:textColor="@color/foot_unchecked"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="@color/gray_tra"></View>
+
+    <TextView
+        android:id="@+id/btn_detail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="详情"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:typeface="serif" />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="@color/gray_tra"></View>
+
+    <TextView
+        android:id="@+id/btn_cache"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="缓存"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="@color/gray_tra"></View>
+
+    <TextView
+        android:id="@+id/btn_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="置顶"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="@color/gray_tra"></View>
+
+    <TextView
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="删除"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+</LinearLayout>

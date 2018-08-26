@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_bg">
+
+        <TextView
+            android:id="@+id/tv_sure_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/tv_sure_search"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="4dp"
+            android:singleLine="true"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionDone"
+            android:paddingLeft="4dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_hot_search_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/hot_search"
+        android:textColor="@color/book_name_black"
+        android:textSize="16sp" />
+
+    <com.syezon.reader.widget.HotFlowLayout
+        android:id="@+id/hotFlowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

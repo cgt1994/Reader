@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="259dp"
+
+    android:layout_height="145dp"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/close" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_close"
+
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/update_info"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d2d2d2"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:text="立即更新"
+            android:textColor="#36c5d3" />
+    </RelativeLayout>
+</LinearLayout>

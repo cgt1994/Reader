@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.syezon.reader.widget.SlidingLayout
+            android:id="@+id/slidingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chapter_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/no_chapter_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/wifi" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+    <TextView
+        android:layout_alignBaseline="@+id/setting"
+        android:layout_toLeftOf="@+id/setting"
+        android:id="@+id/tv_battery"
+        android:textColor="@color/book_chapter_color"
+        android:textSize="12sp"
+
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/setting"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/book_chapter_color"
+            android:textSize="14sp" />
+
+        <com.syezon.reader.view.BatteryView
+            android:layout_marginTop="5dp"
+            android:id="@+id/view_bv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!--<include
+
+        android:id="@+id/read_menu"
+        layout="@layout/view_read_menu" />-->
+</RelativeLayout>
